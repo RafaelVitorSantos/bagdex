@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+    color: #333;
+    font-family: 'Exo', sans-serif;
+    user-select: none;
+}
+
+img {
+    border-radius: 50px 0 50px 0;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 0;
+    color: #888;
+    border: 1px solid #777;
+    border-radius: 20px;
+}
+
+input[type="button"] {
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #777;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+    transition: 0.4s;
+    transform: scale(1.1);
+    background-color: #ababab;
+}
+
+p {
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    font-weight: 800;
+    max-width: 200px;
+}
+
+.shake-animation {
+    animation: shake 0.2s;
+}
+
+.pokemonMudar {
+    width: 40px;
+}
+
+#background-mid p {
+    max-width: 400px;
+    color: #fff;
+}
+
+#container-bagdex {
+    justify-content: center;
+    text-align: center;
+}
+
+#left-bagmon {
+    margin-top: 30%;
+    text-align: center;
+}
+
+#right-bagmon {
+    margin-top: 30%;
+    text-align: center;
+}
+
+#right-bagmon :where(p, h1) {
+    text-align: left;
+    max-width: 200px;
+    margin-left: 10px;
+}
+
+.tipo {
+    height: 40px;
+}
+
+#left-bagmon :where(p, h1) {
+    text-align: right;
+    max-width: 200px;
+    margin-right: 10px;
+}
+
+#background-let {
+    background-color: #0f0;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#background-rit {
+    background-color: #0ff;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+#background-mid {
+    background-color: #222;
+    padding: 30px 30px 20px 30px;
+    border-radius: 30px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 250px 350px 250px;
+    gap: 5%;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#imageAnterior {
+    width: 200px;
+}
+
+#imageProximo {
+    width: 200px;
+}
+
+#image {
+    width: 250px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+@media (max-width: 1000px) {
+    #grid {
+        grid-template-columns: 200px 300px 200px;
+        font-size: 18px;
+    }
+
+    #imageAnterior {
+        width: 150px;
+    }
+
+    #imageProximo {
+        width: 150px;
+    }
+
+    #image {
+        width: 200px;
+    }
+
+    input[type="button"] {
+        width: 70px;
+        height: 40px;
+        margin: 10px;
+        font-weight: 800;
+    }
+
+    input[type="text"] {
+        height: 40px;
+    }
+
+    #left-bagmon {
+        margin-top: 55%;
+        text-align: center;
+    }
+
+    #right-bagmon {
+        margin-top: 55%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 880px) {
+
+    #grid {
+        grid-template-columns: 1fr;
+    }
+
+    #left-bagmon {
+        display: none;
+    }
+
+    #right-bagmon {
+        display: none;
+    }
+
+    #background-mid {
+        background-color: #222;
+        padding: 60px 60px 40px 60px;
+        border-radius: 30px;
+    }
+
+    input[type="button"] {
+        width: 200px;
+        height: 40px;
+        margin: 10px;
+        font-weight: 800;
+    }
+
+    input[type="text"] {
+        height: 40px;
+        width: 200px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    #background-mid {
+        padding: 35px;
+    }
+
+    #image{
+        width: 200px;
+    }
+
+    input[type="button"] {
+        width: 200px;
+        height: 40px;
+        font-weight: 800;
+        margin: 0px 0px 5px 0px;
+    }
+
+    input[type="text"] {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 350px){
+    #background-mid {
+        padding: 20px;
+    }
+}
