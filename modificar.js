@@ -195,7 +195,6 @@ function BuscarID() {
 }
 
 function InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois) {
-    document.getElementById('carregar').style.display = 'block'
     img.setAttribute('src', nome)
     antes.setAttribute('src', imagemAntes)
     depois.setAttribute('src', imagemDepois)
