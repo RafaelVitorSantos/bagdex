@@ -49,6 +49,10 @@ var pokemonsTipo = ["PLANTA", "PLANTA & VOADOR", "PLANTA & VOADOR", "FOGO", "FOG
     "VOADOR & SOMBRIO", "SINTÉTICO & SOMBRIO", "CÓSMICO & PSÍQUICO", "CÓSMICO & PSIQUICO"]
 
 function Proximo() {
+    document.getElementById('carregar').style.display = 'block'
+    setTimeout(() => {
+        document.getElementById('carregar').style.display = 'none'
+    }, 500)
     if (this.x < 150) {
         this.x += 1
         BuscarID()
@@ -86,6 +90,10 @@ function Proximo() {
 }
 
 function Anterior() {
+    document.getElementById('carregar').style.display = 'block'
+    setTimeout(() => {
+        document.getElementById('carregar').style.display = 'none'
+    }, 500)
     if (this.x > 2) {
         this.x -= 1
         BuscarID()
@@ -123,6 +131,10 @@ function Anterior() {
 }
 
 function Buscar(nameID) {
+    document.getElementById('carregar').style.display = 'block'
+    setTimeout(() => {
+        document.getElementById('carregar').style.display = 'none'
+    }, 500)
     if (pokemonsName.includes(nameID)) {
         this.x = (pokemonsName.indexOf(nameID) + 1)
         if (this.x == 151) {
