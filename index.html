@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÁGDEX</title>
+    <script src="modificar.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="carregar">carregando...</div>
+    <div id="grid">
+        <div id="left-bagmon">
+            <div id="background-let">
+                <img src="imagem/151.webp" id="imageAnterior" alt="POKEMON:IMG">
+                <p id="nomeAnterior">BIVALDO</p>
+                <p id="tipoAnterior" class="tipo">CÓSMICO & PSÍQUICO</p>
+                <h1>ANTERIOR</h1>
+            </div>
+        </div>
+
+        <div id="container-bagdex">
+            <div id="background-mid">
+                <img src="imagem/1.webp" id="image" alt="POKEMON:IMG">
+                <p id="nome" class="border-t">VOARA</p>
+                <p id="tipo" class="tipo">PLANTA</p>
+                <br>
+                <input type="text" id="NOMEouID" placeholder="Digite o nome/ID da Bágdex">
+                <input type="button" value="Buscar" onclick="Buscar(NOMEouID.value)"><br>
+                <input type="button" class="pokemonMudar" value=" < " onclick="Anterior()">
+                <input type="button" class="pokemonMudar" value=" > " onclick="Proximo()">
+            </div>
+        </div>
+
+        <div id="right-bagmon">
+            <div id="background-rit">
+                <img src="imagem/2.webp" id="imageProximo" alt="POKEMON:IMG">
+                <p id="nomeProximo">AZURARA</p>
+                <p id="tipoProximo" class="tipo">PLANTA & VOADOR</p>
+                <h1>PROXIMO</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
