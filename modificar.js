@@ -56,7 +56,6 @@ function Proximo() {
         var imagemDepois = 'imagem/' + (this.x + 1) + '.webp'
         var nome = 'imagem/' + this.x + '.webp'
         InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
-        document.getElementById('carregar').style.display = 'none'
         VerificarNome()
     } else if (this.x == 150) {
         this.x += 1
@@ -65,7 +64,6 @@ function Proximo() {
         var imagemDepois = 'imagem/' + 1 + '.webp'
         var nome = 'imagem/' + 151 + '.webp'
         InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
-        document.getElementById('carregar').style.display = 'none'
         VerificarNome5()
     } else if (this.x == 1) {
         this.x += 1
@@ -74,7 +72,6 @@ function Proximo() {
         var imagemAntes = 'imagem/' + 151 + '.webp'
         var imagemDepois = 'imagem/' + 2 + '.webp'
         InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
-        document.getElementById('carregar').style.display = 'none'
         VerificarNome6()
     } else {
         this.x = 1
@@ -83,7 +80,6 @@ function Proximo() {
         var imagemAntes = 'imagem/' + 151 + '.webp'
         var imagemDepois = 'imagem/' + 2 + '.webp'
         InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
-        document.getElementById('carregar').style.display = 'none'
         VerificarNome2()
     }
     animation()
