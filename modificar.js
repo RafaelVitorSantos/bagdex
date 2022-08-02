@@ -140,7 +140,7 @@ function Buscar(nameID) {
             InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
             VerificarNome3()
 
-        } else if (this == 1) {
+        } else if (this.x == 1) {
             this.x = 1
             BuscarID()
             var nome = 'imagem/' + 1 + '.webp'
@@ -148,14 +148,14 @@ function Buscar(nameID) {
             var imagemDepois = 'imagem/' + 2 + '.webp'
             InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
             VerificarNome2()
+        } else {
+            BuscarID()
+            var nome = 'imagem/' + this.x + '.webp'
+            var imagemAntes = 'imagem/' + (this.x - 1) + '.webp'
+            var imagemDepois = 'imagem/' + (this.x + 1) + '.webp'
+            InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
+            VerificarNome4()
         }
-
-        BuscarID()
-        var nome = 'imagem/' + this.x + '.webp'
-        var imagemAntes = 'imagem/' + (this.x - 1) + '.webp'
-        var imagemDepois = 'imagem/' + (this.x + 1) + '.webp'
-        InserirImagem(antes, depois, img, nome, imagemAntes, imagemDepois)
-        VerificarNome4()
     } else if (parseFloat(nameID) >= 1 && parseFloat(nameID) <= 151) {
         if (parseFloat(nameID) == 151) {
             this.x = 151
