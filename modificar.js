@@ -129,7 +129,7 @@ function Anterior() {
 
 function Buscar(nameID) {
 
-    if (pokemonsName.includes(nameID)) {
+    if (pokemonsName.includes(toUpperCase(nameID))) {
         this.x = (pokemonsName.indexOf(nameID) + 1)
         if (this.x == 151) {
             this.x = 151
